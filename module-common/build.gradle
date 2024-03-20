@@ -37,3 +37,7 @@ dependencies {
 tasks.named('test') {
     useJUnitPlatform()
 }
+
+tasks.bootJar { enabled = false } // true 이면 main class 를 찾음
+tasks.jar { enabled = true }
+

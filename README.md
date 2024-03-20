@@ -17,3 +17,8 @@ dependencies {
 
 tasks.register(“prepareKotlinBuildScriptModel”){}
 ```
+
+### gradle build
+```
+./gradlew clean :module-api:buildNeeded --stacktrace --info --refresh-dependencies -x test
+```
